@@ -1,9 +1,6 @@
 import random
 import string
 
-word_list = ['hippoptamus', 'moose', 'gorilla', 'skyscraper', 'moon', 'sandals', 'cream', 'monster', 'australia', 'mission', 'atlanta', 'president']
-
-
 class Hangman:
     def __init__(self, word_list, num_lives = 5):
         self.word = random.choice(word_list) #The word to be guessed, picked randomly from the word_list
@@ -65,6 +62,7 @@ def play_game(word_list):
             print('Congratulations. You won the game!')
             break
 
+word_list = ['hippoptamus', 'moose', 'gorilla', 'skyscraper', 'moon', 'sandals', 'cream', 'monster', 'australia', 'mission', 'atlanta', 'president']
 play_game(word_list)
 
 
